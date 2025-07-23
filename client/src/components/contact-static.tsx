@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { Mail, MessageSquare, Phone, Users, Send, Clock, Globe, ExternalLink } from "lucide-react";
-import { SiLinkedin, SiGithub, SiYoutube, SiWhatsapp } from "react-icons/si";
+import { SiLinkedin, SiGithub, SiYoutube, SiWhatsapp, SiUpwork } from "react-icons/si";
 import { Twitter, Video } from "lucide-react";
 
 export default function ContactStatic() {
@@ -29,14 +29,14 @@ export default function ContactStatic() {
       subtitle: "rohitsingh0121@gmail.com",
       action: "mailto:rohitsingh0121@gmail.com",
     },
-    // {
-    //   icon: Phone,
-    //   iconColor: "text-green-600",
-    //   bgColor: "bg-green-100",
-    //   title: "Phone",
-    //   subtitle: "+1 (555) 123-4567",
-    //   action: "tel:+15551234567",
-    // },
+    {
+      icon: Phone,
+      iconColor: "text-green-600",
+      bgColor: "bg-green-100",
+      title: "Phone",
+      subtitle: "+91-9643701673",
+      action: "tel:+919643701673",
+    },
     // {
     //   icon: SiWhatsapp,
     //   iconColor: "text-green-600",
@@ -56,10 +56,10 @@ export default function ContactStatic() {
   ];
 
   const socialLinks = [
-    { icon: SiLinkedin, href: "https://linkedin.com/in/your-profile", color: "bg-blue-600 hover:bg-blue-700" },
-    { icon: SiGithub, href: "https://github.com/your-username", color: "bg-gray-800 hover:bg-gray-900" },
-    { icon: Twitter, href: "https://twitter.com/your-handle", color: "bg-blue-500 hover:bg-blue-600" },
-    { icon: SiYoutube, href: "https://youtube.com/@your-channel", color: "bg-red-600 hover:bg-red-700" },
+    { icon: SiUpwork, href: "https://www.upwork.com/freelancers/~012b99a9f513c9f2bc", color: "bg-red-600 hover:bg-red-700" },
+    { icon: SiGithub, href: "https://github.com/gitrohitsingh", color: "bg-gray-800 hover:bg-gray-900" },
+    // { icon: Twitter, href: "https://twitter.com/your-handle", color: "bg-blue-500 hover:bg-blue-600" },
+    // { icon: SiYoutube, href: "https://youtube.com/@your-channel", color: "bg-red-600 hover:bg-red-700" },
   ];
 
   const budgetOptions = [
@@ -124,7 +124,7 @@ ${formData.projectDetails}
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="bg-white shadow-lg border-slate-100">
+          {/* <Card className="bg-white shadow-lg border-slate-100">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Get In Touch</h3>
               
@@ -176,7 +176,7 @@ ${formData.projectDetails}
                     />
                   </div>
                   
-                  {/* <div>
+                  {<div>
                     <Label htmlFor="budget">Project Budget</Label>
                     <Select value={formData.budget} onValueChange={(value) => handleInputChange("budget", value)}>
                       <SelectTrigger className="mt-1">
@@ -190,7 +190,7 @@ ${formData.projectDetails}
                         ))}
                       </SelectContent>
                     </Select>
-                  </div> */}
+                  </div>}
                   
                   <div>
                     <Label htmlFor="projectDetails">Project Details</Label>
@@ -215,39 +215,9 @@ ${formData.projectDetails}
                 </form>
               )}
             </CardContent>
-          </Card>
+          </Card> */}
 
           {/* Contact Info */}
-          <div className="space-y-8">
-            <Card className="bg-white shadow-lg border-slate-100">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-slate-900 mb-6">Contact Methods</h3>
-                <div className="space-y-4">
-                  {contactMethods.map((method, index) => {
-                    const IconComponent = method.icon;
-                    return (
-                      <a
-                        key={index}
-                        href={method.action}
-                        target={method.action.startsWith('http') ? '_blank' : '_self'}
-                        rel={method.action.startsWith('http') ? 'noopener noreferrer' : ''}
-                        className="flex items-center p-4 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-300"
-                      >
-                        <div className={`w-12 h-12 ${method.bgColor} rounded-xl flex items-center justify-center mr-4`}>
-                          <IconComponent className={`${method.iconColor} text-xl`} />
-                        </div>
-                        <div className="flex-grow">
-                          <div className="font-semibold text-slate-900">{method.title}</div>
-                          <div className="text-slate-600">{method.subtitle}</div>
-                        </div>
-                        <ExternalLink className="w-4 h-4 text-slate-400" />
-                      </a>
-                    );
-                  })}
-                </div>
-              </CardContent>
-            </Card>
-
             <Card className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4">Quick Response Guarantee</h3>
@@ -281,6 +251,37 @@ ${formData.projectDetails}
                 </div>
               </CardContent>
             </Card>
+          <div className="space-y-8">
+            <Card className="bg-white shadow-lg border-slate-100">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-slate-900 mb-6">Contact Methods</h3>
+                <div className="space-y-4">
+                  {contactMethods.map((method, index) => {
+                    const IconComponent = method.icon;
+                    return (
+                      <a
+                        key={index}
+                        href={method.action}
+                        target={method.action.startsWith('http') ? '_blank' : '_self'}
+                        rel={method.action.startsWith('http') ? 'noopener noreferrer' : ''}
+                        className="flex items-center p-4 rounded-xl border border-slate-200 hover:border-blue-300 hover:shadow-md transition-all duration-300"
+                      >
+                        <div className={`w-12 h-12 ${method.bgColor} rounded-xl flex items-center justify-center mr-4`}>
+                          <IconComponent className={`${method.iconColor} text-xl`} />
+                        </div>
+                        <div className="flex-grow">
+                          <div className="font-semibold text-slate-900">{method.title}</div>
+                          <div className="text-slate-600">{method.subtitle}</div>
+                        </div>
+                        <ExternalLink className="w-4 h-4 text-slate-400" />
+                      </a>
+                    );
+                  })}
+                </div>
+              </CardContent>
+            </Card>
+
+          
           </div>
         </div>
       </div>
