@@ -5,7 +5,7 @@ import Services from "@/components/services";
 import Portfolio from "@/components/portfolio";
 import About from "@/components/about";
 import Testimonials from "@/components/testimonials";
-import Contact from "@/components/contact";
+import Contact from "@/components/contact-static";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { ArrowUp } from "lucide-react";
