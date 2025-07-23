@@ -18,7 +18,7 @@ export default function Skills() {
       icon: SiVuedotjs,
       iconColor: "text-green-600",
       bgColor: "bg-green-100",
-      skills: ["Vue.js", "React.js", "Angular", "TailwindCSS", "jQuery"],
+      skills: ["Vue.js", "React.js", "Angular", "JavaScript", "TailwindCSS", "jQuery"],
     },
     {
       title: "Database",
@@ -40,22 +40,22 @@ export default function Skills() {
     {
       icon: SiWordpress,
       title: "CMS & E-commerce",
-      subtitle: "WordPress, WooCommerce, Shopify",
+      subtitle: "WordPress, WooCommerce, Shopify (custom API integration)",
     },
     {
       icon: "💳",
       title: "Payment Gateways",
-      subtitle: "Stripe, PayPal, Razorpay, CC Avenue, EBS",
-    },
-    {
-      icon: "🖥️",
-      title: "Server Management",
-      subtitle: "Linux (Ubuntu, CentOS), Redis, Queues",
+      subtitle: "Stripe, PayPal, Razorpay, CC Avenue",
     },
     {
       icon: "⚡",
       title: "Others",
-      subtitle: "Webhooks, Cron Jobs, JIRA, Slack",
+      subtitle: "Linux server management (Ubuntu, CentOS), Redis, Queues, Webhooks, Cron Jobs",
+    },
+    {
+      icon: "🤖",
+      title: "AI & Automation",
+      subtitle: "OpenAI (ChatGPT/GPT-4), LangChain, AI prompt engineering, API-based automation",
     },
   ];
 

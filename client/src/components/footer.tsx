@@ -38,7 +38,7 @@ export default function Footer() {
               onClick={() => scrollToSection("home")}
               className="text-2xl font-bold gradient-text mb-6 block"
             >
-              John Doe
+              Rohit Singh
             </button>
             <p className="text-slate-400 mb-6 max-w-md">
               Laravel Developer specializing in building fast, secure, and scalable web applications. Let's bring your ideas to life with clean, maintainable code.
@@ -102,7 +102,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-slate-400 text-sm">© 2024 John Doe. All rights reserved.</p>
+          <p className="text-slate-400 text-sm">© 2025 Rohit Singh. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-slate-400 hover:text-white text-sm transition-colors">
               Privacy Policy

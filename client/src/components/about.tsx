@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Linkedin, GraduationCap, MapPin, Coffee, Clock, Trophy, Code } from "lucide-react";
+import myPhoto from '../../../assets/img/profile_pic.jpg';
 
 export default function About() {
   const personalInfo = [
@@ -9,7 +10,7 @@ export default function About() {
       iconColor: "text-blue-600",
       bgColor: "bg-blue-100",
       title: "Education",
-      subtitle: "Computer Science, B.Tech",
+      subtitle: "Bachelor of Engineering (B.Eng.)",
     },
     {
       icon: MapPin,
@@ -40,7 +41,7 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-              About <span className="gradient-text">John Doe</span>
+              About <span className="gradient-text">Rohit Singh</span>
             </h2>
             <p className="text-xl text-slate-600 mb-6 leading-relaxed">
               With 6+ years of Laravel development experience, I deliver fast, secure, and scalable web applications. I specialize in building robust backend systems using Laravel and integrating them seamlessly with modern frontends like Vue.js, React, and Angular.
@@ -80,7 +81,7 @@ export default function About() {
           
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=800"
+              src={myPhoto}
               alt="Professional developer portrait"
               className="rounded-2xl shadow-2xl w-full"
             />
@@ -107,7 +108,7 @@ export default function About() {
                     <Code className="w-5 h-5 text-blue-600" />
                   </div>
                   <div>
-                    <div className="font-semibold text-slate-900">150+</div>
+                    <div className="font-semibold text-slate-900">10+</div>
                     <div className="text-sm text-slate-600">Projects Delivered</div>
                   </div>
                 </div>

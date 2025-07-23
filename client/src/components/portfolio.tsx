@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, FolderOpen } from "lucide-react";
-import { SiLaravel, SiVuedotjs, SiReact, SiAngular, SiMysql, SiMongodb } from "react-icons/si";
+import { SiLaravel, SiVuedotjs, SiReact, SiAngular, SiMysql, SiMongodb, SiPostgresql, SiStripe, SiShopify, SiTwilio } from "react-icons/si";
 
 export default function Portfolio() {
   const scrollToContact = () => {
@@ -25,38 +25,50 @@ export default function Portfolio() {
       technologies: [SiLaravel, SiVuedotjs, SiMysql],
     },
     {
-      title: "Project Management SaaS",
-      description: "Developed a comprehensive project management tool with real-time collaboration, time tracking, and advanced reporting for enterprise clients.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["SaaS", "Laravel", "React"],
+      title: "Custom ERP for Manufacturing",
+      description: "Developed a Laravel-powered ERP tailored to a mid-size manufacturing company, covering inventory, vendor management, production logs, and custom reporting. Integrated with IoT sensors for real-time machine status updates.",
+      image: "https://media.istockphoto.com/id/1353373648/photo/enterprise-resource-planning-or-erp-concept-businesswoman-working-at-laptop-computer-with.webp?a=1&b=1&s=612x612&w=0&k=20&c=0p-608pPhzDWjI5xmtUv2oBTUvzKtfJkrYOwGhMFpeE=",
+      tags: ["Manufacturing", "Laravel", "IoT"],
       stats: [
         { label: "Active Users", value: "10K+" },
         { label: "Projects Managed", value: "50K+" },
       ],
-      technologies: [SiLaravel, SiReact, SiMongodb],
+      technologies: [SiLaravel, SiReact, SiPostgresql],
     },
     {
-      title: "Healthcare Management System",
-      description: "Built a HIPAA-compliant patient management system with appointment scheduling, medical records, and billing integration.",
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["Healthcare", "Laravel", "Angular"],
+      title: "Modular E-commerce Backend",
+      description: "Engineered a scalable backend system with multi-storefront logic, Shopify sync, tax rules, and custom payment/shipping integrations. Optimized for high-conversion performance.",
+      image: "https://images.unsplash.com/photo-1688561807440-8a57dfa77ee3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      tags: ["E-commerce", "Laravel", "Shopify"],
       stats: [
         { label: "Healthcare Providers", value: "50+" },
         { label: "Patient Records", value: "25K+" },
       ],
-      technologies: [SiLaravel, SiAngular, SiMysql],
+      technologies: [SiLaravel, SiShopify, SiStripe],
     },
+    // {
+    //   title: "Financial Analytics Platform",
+    //   description: "Created a real-time financial analytics platform with advanced reporting, automated compliance, and multi-currency support.",
+    //   image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+    //   tags: ["FinTech", "Laravel", "Vue.js"],
+    //   stats: [
+    //     { label: "Transactions Processed", value: "$50M+" },
+    //     { label: "Uptime", value: "99.9%" },
+    //   ],
+    //   technologies: [SiLaravel, SiVuedotjs, SiMongodb],
+    // },
     {
-      title: "Financial Analytics Platform",
-      description: "Created a real-time financial analytics platform with advanced reporting, automated compliance, and multi-currency support.",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      tags: ["FinTech", "Laravel", "Vue.js"],
+      title: "Community Safety Alert System",
+      description: "Developed a real-time alert system where users can trigger emergency help with one click. Sends instant notifications to nearby verified community members via SMS and in-app alerts.",
+      image: "https://images.unsplash.com/photo-1649759210256-242a67703f4d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      tags: ["Security", "Laravel", "Angular"],
       stats: [
-        { label: "Transactions Processed", value: "$50M+" },
-        { label: "Uptime", value: "99.9%" },
+        { label: "Communities Protected", value: "100+" },
+        { label: "Emergency Alerts Sent", value: "5K+" },
       ],
-      technologies: [SiLaravel, SiVuedotjs, SiMongodb],
-    },
+      technologies: [SiLaravel, SiAngular, SiTwilio],
+    }
+
   ];
 
   const getTagColor = (tag: string) => {
@@ -81,7 +93,7 @@ export default function Portfolio() {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Showcasing successful projects that demonstrate technical expertise and business impact
+            Showcasing some successful projects that demonstrate technical expertise and business impact
           </p>
         </div>
 
@@ -103,23 +115,23 @@ export default function Portfolio() {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-3">{project.title}</h3>
                 <p className="text-slate-600 mb-4">{project.description}</p>
-                <div className="grid grid-cols-2 gap-4 mb-6">
+                {/* <div className="grid grid-cols-2 gap-4 mb-6">
                   {project.stats.map((stat, statIndex) => (
                     <div key={statIndex}>
                       <div className="text-2xl font-bold text-slate-900">{stat.value}</div>
                       <div className="text-sm text-slate-600">{stat.label}</div>
                     </div>
                   ))}
-                </div>
+                </div> */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                     {project.technologies.map((TechIcon, techIndex) => (
                       <TechIcon key={techIndex} className="text-xl text-slate-600" />
                     ))}
                   </div>
-                  <button className="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1">
+                  {/* <button className="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1">
                     View Case Study <ExternalLink className="w-4 h-4" />
-                  </button>
+                  </button> */}
                 </div>
               </CardContent>
             </Card>

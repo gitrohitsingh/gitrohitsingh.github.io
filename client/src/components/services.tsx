@@ -135,7 +135,7 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <div className="text-2xl font-bold text-slate-900 mb-4">
+                  {/* <div className="text-2xl font-bold text-slate-900 mb-4">
                     {service.price}
                     <span className="text-base font-normal text-slate-500">{service.period}</span>
                   </div>
@@ -144,7 +144,7 @@ export default function Services() {
                     className={`w-full font-semibold py-3 rounded-xl transition-colors ${service.buttonColor}`}
                   >
                     Get Started
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </Card>
             );

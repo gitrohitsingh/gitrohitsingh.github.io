@@ -26,33 +26,33 @@ export default function ContactStatic() {
       iconColor: "text-blue-600",
       bgColor: "bg-blue-100",
       title: "Email",
-      subtitle: "your.email@example.com",
-      action: "mailto:your.email@example.com",
+      subtitle: "rohitsingh0121@gmail.com",
+      action: "mailto:rohitsingh0121@gmail.com",
     },
-    {
-      icon: Phone,
-      iconColor: "text-green-600",
-      bgColor: "bg-green-100",
-      title: "Phone",
-      subtitle: "+1 (555) 123-4567",
-      action: "tel:+15551234567",
-    },
-    {
-      icon: SiWhatsapp,
-      iconColor: "text-green-600",
-      bgColor: "bg-green-100",
-      title: "WhatsApp",
-      subtitle: "+1 (555) 123-4567",
-      action: "https://wa.me/15551234567",
-    },
-    {
-      icon: Video,
-      iconColor: "text-purple-600",
-      bgColor: "bg-purple-100",
-      title: "Video Call",
-      subtitle: "Schedule a meeting",
-      action: "https://calendly.com/your-profile",
-    },
+    // {
+    //   icon: Phone,
+    //   iconColor: "text-green-600",
+    //   bgColor: "bg-green-100",
+    //   title: "Phone",
+    //   subtitle: "+1 (555) 123-4567",
+    //   action: "tel:+15551234567",
+    // },
+    // {
+    //   icon: SiWhatsapp,
+    //   iconColor: "text-green-600",
+    //   bgColor: "bg-green-100",
+    //   title: "WhatsApp",
+    //   subtitle: "+1 (555) 123-4567",
+    //   action: "https://wa.me/15551234567",
+    // },
+    // {
+    //   icon: Video,
+    //   iconColor: "text-purple-600",
+    //   bgColor: "bg-purple-100",
+    //   title: "Video Call",
+    //   subtitle: "Schedule a meeting",
+    //   action: "https://calendly.com/your-profile",
+    // },
   ];
 
   const socialLinks = [
@@ -176,7 +176,7 @@ ${formData.projectDetails}
                     />
                   </div>
                   
-                  <div>
+                  {/* <div>
                     <Label htmlFor="budget">Project Budget</Label>
                     <Select value={formData.budget} onValueChange={(value) => handleInputChange("budget", value)}>
                       <SelectTrigger className="mt-1">
@@ -190,7 +190,7 @@ ${formData.projectDetails}
                         ))}
                       </SelectContent>
                     </Select>
-                  </div>
+                  </div> */}
                   
                   <div>
                     <Label htmlFor="projectDetails">Project Details</Label>

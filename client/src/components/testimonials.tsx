@@ -6,22 +6,22 @@ export default function Testimonials() {
   const testimonials = [
     {
       rating: 5,
-      text: "John delivered exactly what we needed and more. His technical expertise and communication skills made the entire project smooth. Our e-commerce platform now handles 10x more traffic than before.",
-      author: "Sarah Chen",
+      text: "I am extremely satisfied with Rohit's work. I hired him for my Security project on Laravel/Angular. He worked continuously until the project finished successfully. His code is clean, commented and easy to read. I will continue using Rohit for my on-going project. I highly recommend him. Thanks for an outstanding job! Very happy and definitely hire again." ,
+      author: "Upwork Client",
       position: "CEO, TechStart Inc.",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b1e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100",
     },
     {
       rating: 5,
-      text: "Outstanding work on our SaaS platform. John's Laravel expertise helped us scale from 100 to 10,000 users seamlessly. His code quality and documentation are exceptional.",
-      author: "Mike Rodriguez",
+      text: "Extremely skilled coder! Thank you!",
+      author: "Upwork Client",
       position: "CTO, CloudFlow Solutions",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100",
     },
     {
       rating: 5,
-      text: "John transformed our legacy system into a modern, efficient application. His attention to detail and proactive communication made him a pleasure to work with. Highly recommend!",
-      author: "Emily Johnson",
+      text: "Rohit is a skilled freelancer and I'll be glad to work with him again. He delivered on time and made sure I was 100% satisfied.",
+      author: "Upwork Client",
       position: "Product Manager, FinanceFlow",
       avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100",
     },
@@ -59,14 +59,14 @@ export default function Testimonials() {
                 </div>
                 <p className="text-slate-600 mb-6 italic">"{testimonial.text}"</p>
                 <div className="flex items-center">
-                  <img
+                  {/* <img
                     src={testimonial.avatar}
                     alt={testimonial.author}
                     className="w-12 h-12 rounded-full mr-4"
-                  />
+                  /> */}
                   <div>
                     <div className="font-semibold text-slate-900">{testimonial.author}</div>
-                    <div className="text-slate-600 text-sm">{testimonial.position}</div>
+                    {/* <div className="text-slate-600 text-sm">{testimonial.position}</div> */}
                   </div>
                 </div>
               </CardContent>
@@ -79,7 +79,7 @@ export default function Testimonials() {
             <Star className="w-4 h-4 text-yellow-500 mr-2" />
             <span className="font-semibold">4.9/5 Average Rating</span>
             <span className="mx-2">•</span>
-            <span>150+ Projects Completed</span>
+            <span>10+ Projects Completed</span>
           </Badge>
         </div>
       </div>

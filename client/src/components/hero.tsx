@@ -55,7 +55,7 @@ export default function Hero() {
                 <div className="text-sm text-slate-600">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-slate-900">150+</div>
+                <div className="text-2xl font-bold text-slate-900">10+</div>
                 <div className="text-sm text-slate-600">Projects Completed</div>
               </div>
               <div className="text-center">
@@ -67,7 +67,7 @@ export default function Hero() {
           
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800"
+              src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Professional developer headshot"
               className="rounded-2xl shadow-2xl animate-float w-full max-w-md mx-auto"
             />

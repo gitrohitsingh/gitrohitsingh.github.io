@@ -46,7 +46,7 @@ export default function Navigation() {
             onClick={() => scrollToSection("home")}
             className="text-xl font-bold gradient-text"
           >
-            John Doe
+            Rohit Singh
           </button>
 
           {/* Desktop Navigation */}
