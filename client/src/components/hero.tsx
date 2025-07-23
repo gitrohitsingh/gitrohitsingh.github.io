@@ -68,7 +68,7 @@ export default function Hero() {
           <div className="relative">
             <img
               src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Professional developer headshot"
+              alt="Professional developer"
               className="rounded-2xl shadow-2xl animate-float w-full max-w-md mx-auto"
             />
             <div className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-lg p-4 border border-slate-200">
