@@ -82,7 +82,7 @@ export default function About() {
           <div className="relative">
             <img
               src={myPhoto}
-              alt="Professional developer portrait"
+              alt="Professional developer"
               className="rounded-2xl shadow-2xl w-full"
             />
             
