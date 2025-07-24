@@ -74,9 +74,9 @@ export default function Portfolio() {
   const getTagColor = (tag: string) => {
     const colors: { [key: string]: string } = {
       "E-commerce": "bg-green-100 text-green-800",
-      "SaaS": "bg-blue-100 text-blue-800",
-      "Healthcare": "bg-green-100 text-green-800",
-      "FinTech": "bg-yellow-100 text-yellow-800",
+      "IoT": "bg-blue-100 text-blue-800",
+      "Manufacturing": "bg-green-100 text-green-800",
+      "Security": "bg-yellow-100 text-yellow-800",
       "Laravel": "bg-red-100 text-red-800",
       "Vue.js": "bg-purple-100 text-purple-800",
       "React": "bg-cyan-100 text-cyan-800",
@@ -139,13 +139,24 @@ export default function Portfolio() {
         </div>
 
         <div className="text-center">
-          <Button
+          {/* <Button
             onClick={scrollToContact}
             className="bg-blue-600 hover:bg-blue-700 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
           >
             <FolderOpen className="w-5 h-5 mr-2" />
             View Full Portfolio
-          </Button>
+          </Button> */}
+
+          <a
+            href="https://www.upwork.com/freelancers/~012b99a9f513c9f2bc?mp_source=share"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center bg-blue-600 hover:bg-blue-700 px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 text-white"
+          >
+            <FolderOpen className="w-5 h-5 mr-2" />
+            View Full Portfolio
+          </a>
+
         </div>
       </div>
     </section>

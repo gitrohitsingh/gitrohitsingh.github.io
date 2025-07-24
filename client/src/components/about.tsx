@@ -67,7 +67,7 @@ export default function About() {
               })}
             </div>
 
-            <div className="flex flex-wrap gap-4">
+            {/* <div className="flex flex-wrap gap-4">
               <Button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl">
                 <Download className="w-4 h-4 mr-2" />
                 Download Resume
@@ -76,7 +76,7 @@ export default function About() {
                 <Linkedin className="w-4 h-4 mr-2" />
                 LinkedIn Profile
               </Button>
-            </div>
+            </div> */}
           </div>
           
           <div className="relative">

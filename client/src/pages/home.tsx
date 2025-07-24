@@ -40,7 +40,7 @@ export default function Home() {
       <About />
       <Testimonials />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
       
       {/* Scroll to Top Button */}
       <Button

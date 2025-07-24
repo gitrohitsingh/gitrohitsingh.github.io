@@ -56,7 +56,7 @@ export default function ContactStatic() {
   ];
 
   const socialLinks = [
-    { icon: SiUpwork, href: "https://www.upwork.com/freelancers/~012b99a9f513c9f2bc", color: "bg-red-600 hover:bg-red-700" },
+    { icon: SiUpwork, href: "https://www.upwork.com/freelancers/~012b99a9f513c9f2bc", color: "bg-gray-800 hover:bg-gray-900" },
     { icon: SiGithub, href: "https://github.com/gitrohitsingh", color: "bg-gray-800 hover:bg-gray-900" },
     // { icon: Twitter, href: "https://twitter.com/your-handle", color: "bg-blue-500 hover:bg-blue-600" },
     // { icon: SiYoutube, href: "https://youtube.com/@your-channel", color: "bg-red-600 hover:bg-red-700" },
